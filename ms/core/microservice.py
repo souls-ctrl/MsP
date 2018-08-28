@@ -1,16 +1,16 @@
-from µs.core.base import Route
-from µs.core.base import ApplicationHandler
+from ms.core.base import Route
+from ms.core.base import ApplicationHandler
 
 
 class Microservice:
     """."""
     def __init__(self, **kwargs):
         """."""
-        self.host = kwargs.get('host', 'localhost')
+        self.host = kwargs.get('host', '0.0.0.0')
         self.port = kwargs.get('port', 8080)
         self.access_method = kwargs.get('access_method', ['REST'])
         routes = kwargs.get('routes',
-                            [(r'/Products', 'ground.contrib.ListProducts')])
+                            [('', 'ms.base.get_started.Welcome')])
         routes = [Route(*args) for args in routes]
 
         self.application = ApplicationHandler(*routes)

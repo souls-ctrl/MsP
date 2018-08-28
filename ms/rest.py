@@ -1,5 +1,5 @@
-from µs.core.abstract import RESTBase
-from µs.core.base import RequestMethod
+from ms.core.abstract import RESTBase
+from ms.core.base import RequestMethod
 import importlib
 
 

@@ -1,8 +1,8 @@
 from sqlalchemy import Column, String, Integer, DateTime
 from sqlalchemy.sql import func
 
-from µs.core.storage import Base
-from µs.core.storage import SQLStorage
+from ms.core.storage import Base
+from ms.core.storage import SQLStorage
 
 
 class Model:

@@ -1,6 +1,6 @@
 import importlib
 import re
-from µs.core.storage import SQLStorage
+from ms.core.storage import SQLStorage
 
 
 class RequestMethod:
